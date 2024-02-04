@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.6",
+    "@mui/material": "^5.15.6",
     "@uidotdev/usehooks": "^2.4.1",
+    "accessibilik": "^1.0.14",
     "flag-icons": "^7.1.0",
     "generate-react-cli": "^8.4.0",
     "i18next": "^23.7.16",

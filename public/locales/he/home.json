@@ -1,0 +1,52 @@
+{
+  "homeTitle": "תוסף נגישות חינמי",
+  "change-locale": "Change locale to \"{{changeTo}}\"",
+  "to-second-page": "To second page",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server",
+  "title": "אקססביליק - תוסף נגישות בחינם לאתרים ולאפליקציות React",
+  "quote":".כוחו של האינטרנט מתבטא באוניברסליות שלו. היכולת לאפשר לכולם את הגישה אליו, ללא קשר למוגבלות היא היבט חיוני",
+  "features": {
+    "alignTextButton": "ישור טקסט",
+    "bigCursorButton": "סמן עכבר גדול",
+    "brightnessControl": "בקרת בהירות",
+    "darkContrastButton": "ניגוד כהה",
+    "dyslexiaFontButton": "גופן לדיסלקטים",
+    "FontWeightButton": "עובי גופן",
+    "fontWeightButton": "עובי גופן",
+    "highContrastButton": "ניגוד גבוה",
+    "highSaturationButton": "רווי צבע גבוה",
+    "highlightLinksButton": "הדגשת קישורים",
+    "highlightTitleButton": "הדגשת כותרת",
+    "lightContrastButton": "ניגוד חלש",
+    "lineHeightButton": "גובה שורה",
+    "lowSaturationButton": "רווי צבע נמוך",
+    "textToSpeech": "הקראת טקסטים",
+    "wordSpacingButton": "ריווח מילים",
+    "bluelightfilter": "מסנן אור כחול",
+    "fontsize": "התאמת גודל גופן",
+    "letterspacing": "ריווח אותיות",
+    "monochrome": "חד צבעי",
+    "readingguide": "מדריך קריאה",
+    "textcolor": "צבע טקסט",
+    "visualimpairment": "לקות ראייה",
+    "zoom": "זום"
+  },
+  "blog": {
+    "appDir": {
+      "question": "Are you using the new Next.js 13/14 app directory?",
+      "answer": "Then check out <1>this blog post</1>.",
+      "link": "https://locize.com/blog/next-app-dir-i18n/"
+    },
+    "optimized": {
+      "question": "Do you like to unleash some super powers to have all side optimized translations?",
+      "answer": "Then you may have a look at <1>this blog post</1>.",
+      "link": "https://locize.com/blog/next-i18next/"
+    },
+    "ssg": {
+      "question": "Do you want to use SSG (next export)?",
+      "answer": "Then you may have a look at <1>this blog post</1>.",
+      "link": "https://locize.com/blog/next-i18n-static/"
+    }
+  }
+}
