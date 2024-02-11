@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { FooterWrapper, NavItems, NavItem, NavLink } from "./Footer.styled";
 
 interface FooterProps {}
+console.log(1)
 
 const Footer: FC<FooterProps> = () => {
   const { t } = useTranslation("home");
