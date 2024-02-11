@@ -5,7 +5,7 @@
   "error-with-status": "A {{statusCode}} error occurred on server",
   "error-without-status": "An error occurred on the server",
   "title": "אקססביליק - תוסף נגישות בחינם לאתרים ולאפליקציות React",
-  "quote":".כוחו של האינטרנט מתבטא באוניברסליות שלו. היכולת לאפשר לכולם את הגישה אליו, ללא קשר למוגבלות היא היבט חיוני",
+  "quote": ".כוחו של האינטרנט מתבטא באוניברסליות שלו. היכולת לאפשר לכולם את הגישה אליו, ללא קשר למוגבלות היא היבט חיוני",
   "features": {
     "alignTextButton": "ישור טקסט",
     "bigCursorButton": "סמן עכבר גדול",
@@ -30,23 +30,77 @@
     "readingguide": "מדריך קריאה",
     "textcolor": "צבע טקסט",
     "visualimpairment": "לקות ראייה",
-    "zoom": "זום"
-  },
-  "blog": {
-    "appDir": {
-      "question": "Are you using the new Next.js 13/14 app directory?",
-      "answer": "Then check out <1>this blog post</1>.",
-      "link": "https://locize.com/blog/next-app-dir-i18n/"
-    },
-    "optimized": {
-      "question": "Do you like to unleash some super powers to have all side optimized translations?",
-      "answer": "Then you may have a look at <1>this blog post</1>.",
-      "link": "https://locize.com/blog/next-i18next/"
-    },
-    "ssg": {
-      "question": "Do you want to use SSG (next export)?",
-      "answer": "Then you may have a look at <1>this blog post</1>.",
-      "link": "https://locize.com/blog/next-i18n-static/"
+    "zoom": "זום",
+    "blog": {
+      "alignTextButton": "מאפשר למשתמש לישר את הטקסט לשמאל, למרכז או לימין לשיפור נגישות הקריאה.",
+      "bigCursorButton": "הגדלת סמן העכבר לשיפור זיהויו על ידי משתמשים עם לקות ראייה.",
+      "brightnessControl": "מאפשר התאמה של בהירות המסך לסיוע בקריאה נוחה יותר.",
+      "darkContrastButton": "שינוי ערכת הצבעים לניגוד כהה להקלה על הקריאה בתנאי אור נמוך.",
+      "dyslexiaFontButton": "שימוש בגופן המותאם לדיסלקטים לשיפור נוחות הקריאה.",
+      "fontWeightButton": "מאפשר שינוי עובי הגופן להבלטה או החלשת טקסטים.",
+      "highContrastButton": "מצב ניגודיות גבוהה לשיפור חדות וקריאות הטקסט.",
+      "highSaturationButton": "הגברת רווי הצבעים לשיפור זיהוי והבחנה בין יסודות הממשק.",
+      "highlightLinksButton": "הדגשת קישורים בדף לזיהוי נוח יותר של אלמנטים נתיקים.",
+      "highlightTitleButton": "הדגשת כותרות בדף לסיוע בניווט והבנת מבנה התוכן.",
+      "lightContrastButton": "מצב ניגודיות חלשה להקלה על עיניים רגישות.",
+      "lineHeightButton": "התאמת גובה השורה לשיפור נוחות הקריאה.",
+      "lowSaturationButton": "הורדת רווי הצבעים למניעת עומס חזותי ולסיוע למשתמשים עם רגישות לצבעים.",
+      "textToSpeech": "הקראת הטקסט באתר בקול דיבור לסיוע למשתמשים עם קשיי קריאה או לקות ראייה.",
+      "wordSpacingButton": "התאמת ריווח בין המילים לשיפור קריאות הטקסט.",
+      "bluelightfilter": "מסנן אור כחול להקלה על העיניים בשעות קריאה ממושכות או בתנאי חושך.",
+      "fontsize": "התאמת גודל הגופן לשיפור נוחות הקריאה.",
+      "letterspacing": "התאמת ריווח בין האותיות לשיפור נוחות הקריאה.",
+      "monochrome": "מצב חד צבעי למניעת הסחות דעת חזותיות ולשיפור קריאות הטקסט.",
+      "readingguide": "מדריך קריאה שמסייע למשתמש לעקוב אחרי הטקסט באופן קווי, לשיפור הבנת הנקרא.",
+      "textcolor": "התאמת צבע הטקסט לשיפור הנוחות והנגישות של הקריאה.",
+      "visualimpairment": "מספק כלים והתאמות ספציפיות לשיפור הנגישות למשתמשים עם לקות ראייה.",
+      "zoom": "מגדיל את תצוגת האתר לסיוע בקריאה וניווט למשתמשים עם לקות ראייה."
     }
+  },
+  "hero":{
+    "item1":{
+      "title":"התוסף בחינם",
+      "description":"לא צריך להירשם, אין צורך בהשארת פרטי קשר ו/או איימיל. זה בחינם!!!"
+    },
+    "item2":{
+      "title":"קל להתקנה",
+      "description":"התקנה לוקחת כמה שניות - על ידי הטמעת תגית אצלכם בקוד."
+    },
+    "item3":{
+      "title":"25 פי׳צרים מגניבים",
+      "description":"25 פיצ׳רים אשר יקדמו את הנגישות אצלכם באתר"
+    },
+    "item4":{
+      "title":"37 שפות",
+      "description":"בחר אחת מתוך 37 שפות שונות."
+    },
+    "button1":"נסה את התוסף",
+    "button2":"התקן את התוסף"
+  },
+  "nav": {
+    "features": "פיצ׳רים",
+    "contact": "יצירת קשר",
+    "getFreeWidget": "קבל את התוסף החינמי"
+  },
+  "installation":{
+    "title":"התקנה",
+    "embed":"הטמעת תגית <script> בתוך הקוד",
+    "react":"קומפוננטה של React"
+  },
+  "important":{
+    "title":"חשוב לקרוא",
+    "item1":"accessibilik הינו תוסף חינמי, אשר פותח במטרה לעזור לאתרים ולתמוך בקוד פתוח. התוסף מספק חלק מדרישות הנגישות ולא את כולן. הוא אינו מתיימר לעמוד בשום תקן בתחום הנגישות.",
+    "item2":"התוסף מעוגן רישיון MIT, שזה הוא בעצם רישיון לתוכנות קוד פתוח.",
+    "item3":"יש בתוסף המון פיצ׳רים מגניבים ואני אעשה כל מאמץ כדי להמשיך ולעדכן אותו :)"
+  },
+  "contact":{
+    "name":"שם",
+    "email":"אימייל",
+    "message":"טקסט חופשי",
+    "btn":"שלח לי הודעה",
+    "thankyou":"תודה רבה!",
+    "goback":"חזור אחורה"
   }
+  
 }
+

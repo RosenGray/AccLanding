@@ -1,17 +1,18 @@
 import React, { FC, useState } from "react";
+import { useTranslation } from "next-i18next";
+import Container from "../Container/Container";
+import ReactInstall from "../ReactInstall/ReactInstall";
+import ScriptInstall from "../ScriptInstall/ScriptInstall";
 import {
   InstallationWrapper,
   Title,
   Content,
   Tab,
 } from "./Installation.styled";
-import Container from "../Container/Container";
-import ReactInstall from "../ReactInstall/ReactInstall";
-import ScriptInstall from "../ScriptInstall/ScriptInstall";
-
 interface InstallationProps {}
 
 const Installation: FC<InstallationProps> = () => {
+  const { t } = useTranslation('home');
   const [isScript, setIsScript] = useState(true);
   const toggleTabHandler = () => {
     setIsScript((p) => !p);
@@ -23,13 +24,13 @@ const Installation: FC<InstallationProps> = () => {
   return (
     <InstallationWrapper id="installation">
       <Container>
-        <Title>Installation</Title>
+        <Title>{t("installation.title")}</Title>
         <Content>
           <Tab onClick={() => setIsScript(true)} $active={isScript}>
-          Embedding Script
+            {t("installation.embed")}
           </Tab>
           <Tab onClick={() => setIsScript(false)} $active={!isScript}>
-            React Component
+            {t("installation.react")}
           </Tab>
           {renderContent()}
         </Content>

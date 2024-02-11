@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  border: 1px solid red;
-  padding: 1.2em 3em;
+
+  padding: 1em;
   border: none;
   outline: none;
   background-color: #232e8b;
   font-size: 1.8rem;
   color:white;
   font-weight: bold;
-  border-radius: 36px;
+
   cursor: pointer;
+  white-space: nowrap;
+  background: white;
+    border: 2px solid #232e8b;
+    color: #232e8b;
+
 `;
 
 export default Button;

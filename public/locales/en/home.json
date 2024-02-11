@@ -1,52 +1,105 @@
 {
-    "homeTitle": "Free Accessibility Widget",
-    "change-locale": "Change locale to \"{{changeTo}}\"",
-    "to-second-page": "To second page",
-    "error-with-status": "A {{statusCode}} error occurred on server",
-    "error-without-status": "An error occurred on the server",
-    "title": "Accessibilik - Versatile Free (!!!) Accessibility Widget for Web | Import as React Component or Script",
-    "quote":"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.",
-    "features":{
-        "alignTextButton": "Align Text Button",
-        "bigCursorButton": "Big Cursor Button",
-        "brightnessControl": "Brightness Control",
-        "darkContrastButton": "Dark Contrast Button",
-        "dyslexiaFontButton": "Dyslexia Font Button",
-        "FontWeightButton": "Font Weight Button",
-        "fontWeightButton": "Font Weight Button",
-        "highContrastButton": "High Contrast Button",
-        "highSaturationButton": "High Saturation Button",
-        "highlightLinksButton": "Highlight Links Button",
-        "highlightTitleButton": "Highlight Title Button",
-        "lightContrastButton": "Light Contrast Button",
-        "lineHeightButton": "Line Height Button",
-        "lowSaturationButton": "Low Saturation Button",
-        "textToSpeech": "Text To Speech",
-        "wordSpacingButton": "Word Spacing Button",
-        "bluelightfilter": "Bluelight Filter",
-        "fontsize": "Font Size",
-        "letterspacing": "Letter Spacing",
-        "monochrome": "Monochrome",
-        "readingguide": "Reading Guide",
-        "textcolor": "Text Color",
-        "visualimpairment": "Visual Impairment",
-        "zoom": "Zoom"
-    },
+  "homeTitle": "Free Accessibility Widget",
+  "change-locale": "Change locale to \"{{changeTo}}\"",
+  "to-second-page": "To second page",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server",
+  "title": "Accessibilik - Versatile Free (!!!) Accessibility Widget for Web | Import as React Component or Script",
+  "quote": "The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.",
+  "features": {
+    "alignTextButton": "Align Text Button",
+    "bigCursorButton": "Big Cursor Button",
+    "brightnessControl": "Brightness Control",
+    "darkContrastButton": "Dark Contrast Button",
+    "dyslexiaFontButton": "Dyslexia Font Button",
+    "FontWeightButton": "Font Weight Button",
+    "fontWeightButton": "Font Weight Button",
+    "highContrastButton": "High Contrast Button",
+    "highSaturationButton": "High Saturation Button",
+    "highlightLinksButton": "Highlight Links Button",
+    "highlightTitleButton": "Highlight Title Button",
+    "lightContrastButton": "Light Contrast Button",
+    "lineHeightButton": "Line Height Button",
+    "lowSaturationButton": "Low Saturation Button",
+    "textToSpeech": "Text To Speech",
+    "wordSpacingButton": "Word Spacing Button",
+    "bluelightfilter": "Bluelight Filter",
+    "fontsize": "Font Size",
+    "letterspacing": "Letter Spacing",
+    "monochrome": "Monochrome",
+    "readingguide": "Reading Guide",
+    "textcolor": "Text Color",
+    "visualimpairment": "Visual Impairment",
+    "zoom": "Zoom",
     "blog": {
-      "appDir": {
-        "question": "Are you using the new Next.js 13/14 app directory?",
-        "answer": "Then check out <1>this blog post</1>.",
-        "link": "https://locize.com/blog/next-app-dir-i18n/"
-      },
-      "optimized": {
-        "question": "Do you like to unleash some super powers to have all side optimized translations?",
-        "answer": "Then you may have a look at <1>this blog post</1>.",
-        "link": "https://locize.com/blog/next-i18next/"
-      },
-      "ssg": {
-        "question": "Do you want to use SSG (next export)?",
-        "answer": "Then you may have a look at <1>this blog post</1>.",
-        "link": "https://locize.com/blog/next-i18n-static/"
-      }
+      "alignTextButton": "Enables users to adjust the text alignment on the website, offering choices such as left, right, or center alignment. This can enhance readability for users with preferences for specific text layouts.",
+      "bigCursorButton": "Increases the cursor size, making it easier for users with visual impairments to track the cursor’s position on the screen.",
+      "brightnessControl": "Allows users to adjust the screen brightness to a comfortable level, reducing eye strain and improving visibility.",
+      "darkContrastButton": "Switches the website’s color scheme to a dark contrast mode, reducing glare and making it easier for users with light sensitivity to read and navigate.",
+      "dyslexiaFontButton": "Changes the website’s font to a typeface designed specifically for users with dyslexia, enhancing readability by reducing letter swapping and other common reading errors.",
+      "fontWeightButton": "Allows users to modify the thickness of the text, helping to differentiate between different text elements by making them bolder or lighter.",
+      "highContrastButton": "Activates a high contrast color scheme, improving text readability and visual element distinction for users with visual impairments.",
+      "highSaturationButton": "Increases color saturation, making colors more vivid and easier to distinguish for users with color vision deficiencies.",
+      "highlightLinksButton": "Highlights hyperlinks with a distinct color or underline, making them stand out from the rest of the text. This aids users in identifying actionable items on a page.",
+      "highlightTitleButton": "Utilize this feature to emphasize the titles and headings on your website. Adds a border around these elements to make them stand out, which will help users easily identify important information.",
+      "lightContrastButton": "Provides a lighter contrast color scheme, designed to reduce eye strain for users sensitive to bright screens and high contrast.",
+      "lineHeightButton": "Allows users to adjust the spacing between lines of text, improving readability and comfort for those who need more white space.",
+      "lowSaturationButton": "Lowers color saturation to reduce vividness and brightness, beneficial for users who are sensitive to strong colors.",
+      "textToSpeech": "Converts text content into spoken words, assisting users with visual impairments or reading disabilities by providing an auditory version of the text.",
+      "wordSpacingButton": "Adjusts the space between words, aiding readability for users who struggle with text clustering.",
+      "bluelightfilter": "Applies a filter to reduce blue light emitted by the screen, potentially reducing eye strain and improving sleep quality for users.",
+      "fontsize": "Enables users to change the font size on the website, making text larger or smaller based on personal preference or need.",
+      "letterspacing": "Adjusts the spacing between letters, which can help improve readability and reduce visual crowding for some users.",
+      "monochrome": "Converts the website’s color scheme to grayscale, minimizing distractions and helping users with color vision deficiencies to focus on the content.",
+      "readingguide": "Provides a visual aid that helps guide the reader's eye across lines of text, beneficial for users with reading difficulties.",
+      "textcolor": "Allows users to modify the text color, which can be helpful for creating a more comfortable reading experience by improving contrast.",
+      "visualimpairment": "This feature encompasses various adjustments designed to improve website usability for users with visual impairments, including contrast, text size, and more.",
+      "zoom": "Enables users to magnify the website content, making it easier to read and navigate for users needing larger visual elements."
     }
+  },
+  "hero":{
+    "item1":{
+      "title":"Free",
+      "description":"No sign-ups or email required. IT IS FREE!!!"
+    },
+    "item2":{
+      "title":"It Is Easy To Install",
+      "description":"Start and use it in just a few seconds, either by a single line of code or by importing it as a React component."
+    },
+    "item3":{
+      "title":"25 Features",
+      "description":"25 Features to Enhance the Accessibility of Your Website."
+    },
+    "item4":{
+      "title":"37 languages",
+      "description":"Choose from 37 of the Most Widely Spoken and Common Languages"
+    },
+    "button1":"See It In Action",
+    "button2":"Get It Now"
+  },
+  "nav": {
+    "features": "Features",
+    "contact": "Contact",
+    "getFreeWidget": "Get Free Widget"
+  },
+  "installation":{
+    "title":"Installation",
+    "embed":"Embedding Script",
+    "react":"React Component"
+  },
+  "important": {
+    "title":"Please keep in mind",
+    "item1": "accessibilik is a free plugin, developed with the goal of helping websites and supporting open source. The plugin provides some of the accessibility requirements but not all of them. It does not claim to meet any standard in the accessibility field.",
+    "item2": "The plugin is licensed under the MIT license, which is essentially a license for open source software.",
+    "item3": "The plugin has a lot of cool features and I will make every effort to continue updating it :)"
+  },
+  "contact":{
+    "name":"Name",
+    "email":"Email",
+    "message":"Message",
+    "btn":"Send Me A Message",
+    "thankyou":"Thank You",
+    "goback":"Go Back"
   }
+  
+}

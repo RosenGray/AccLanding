@@ -3,7 +3,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import CheckIcon from "@mui/icons-material/Check";
 import {
   CodeBlockWrapper,
-  CopyContainer,
+  CopyContainerDesktop,
   CopyButton,
   CheckMark,
   Tooltip,
@@ -42,10 +42,10 @@ const CodeBlock: FC<CodeBlockProps> = ({ children }) => {
 
   return (
     <CodeBlockWrapper onClick={copyToClipboardHandler}>
-      <CopyContainer>
+      <CopyContainerDesktop>
         <Tooltip $isCopied={isCopied}>copied!</Tooltip>
         <CopyButton>{renderIcon()}</CopyButton>
-      </CopyContainer>
+      </CopyContainerDesktop>
       <pre> <code ref={codeRef}>{children}</code></pre>
     </CodeBlockWrapper>
   );

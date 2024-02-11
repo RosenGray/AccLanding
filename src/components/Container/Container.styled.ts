@@ -5,4 +5,6 @@ export const ContainerWrapper = styled.div`
   padding:0 16px;
   width: 90%;
   max-width: 1320px;
+  display: flex;
+  flex-direction: column;
 `;

@@ -1,21 +1,18 @@
-// import { Inter,Poppins } from "next/font/google";
-// import styles from '@/styles/Home.module.css'
-import { useCallback, useEffect, useRef, useState } from "react";
+
+import { useCallback, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetServerSideProps } from "next";
-import Home from "@/components/Home/Home";
 import Head from "next/head";
 import Layout from "@/components/Layout/Layout";
-import Container from "@/components/Container/Container";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import QuoteStripe from "@/components/QuoteStripe/QuoteStripe";
 import Script from "next/script";
 import FeaturesSection from "@/components/FeaturesSection/FeaturesSection";
 import Installation from "@/components/Installation/Installation";
 import ImportantSection from "@/components/ImportantSection/ImportantSection";
+import PageWrapper from "@/components/PageWrapper/PageWrapper";
 
-// const inter = Inter({ subsets: ["latin"] });
 
 interface HomePageProps {}
 
@@ -45,7 +42,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <Home>
+    <PageWrapper>
       <Head>
         <title>{t("title")}</title>{" "}
       </Head>
@@ -60,7 +57,7 @@ export default function HomePage() {
         src="https://rosengray.github.io/static/accessibilik.min.js"
         onLoad={accLoadHandler}
       />
-    </Home>
+    </PageWrapper>
   );
 }
 
@@ -68,6 +65,7 @@ export default function HomePage() {
 export const getServerSideProps: GetServerSideProps<HomePageProps> = async (
   context
 ) => {
+
   return {
     props: {
       ...(await serverSideTranslations(context.locale ?? "en", [

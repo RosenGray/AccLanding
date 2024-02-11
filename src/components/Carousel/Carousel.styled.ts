@@ -8,7 +8,14 @@ interface CarItemProps {
 export const CarouselWrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr auto;
-  height: 100%;
+
+  flex:0.8 0 320px;
+  @media (max-width: 920px){
+    margin-top: 20px;
+flex:1 0 100%;
+height: 400px;
+}
+  
 `;
 
 export const CarItem = styled.div<CarItemProps>`
@@ -29,6 +36,9 @@ export const CarDots = styled.ul`
   gap: 6px;
   height: 70px;
   list-style-type: none;
+  @media (max-width: 920px){
+      display:none;
+    }
 `;
 
 export const CarDot = styled.li<{ $isActive: boolean }>`
@@ -49,4 +59,5 @@ export const CarDot = styled.li<{ $isActive: boolean }>`
       pointer-events: none;
       background-color: #e49b07;
     `};
+
 `;

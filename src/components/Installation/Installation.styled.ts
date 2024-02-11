@@ -5,7 +5,7 @@ export const InstallationWrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 5rem;
+  font-size: 4vw;
   color: #232e8b;
   margin-bottom: 10px;
 `;

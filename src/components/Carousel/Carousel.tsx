@@ -1,27 +1,25 @@
 import React, { FC, useEffect, useState } from "react";
-import { CarouselWrapper, CarItem, CarDots, CarDot } from "./Carousel.styled";
 import { items } from "./config";
 import { useRouter } from "next/router";
-
+import { CarouselWrapper, CarItem, CarDots, CarDot } from "./Carousel.styled";
 
 const INTERVAL = 2000;
-
 
 interface CarouselProps {}
 
 const Carousel: FC<CarouselProps> = () => {
   const router = useRouter();
-  const locale = router.locale ?? 'en';
+  const locale = router.locale ?? "en";
   const itemsLength = items[locale].length - 1;
 
   const [current, setCurrent] = useState(0);
-  //  useEffect(() => {
-  //    const interval = setInterval(() => {
-  //      setCurrent(current === itemsLength ? 0 : current + 1);
-  //    }, INTERVAL);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent(current === itemsLength ? 0 : current + 1);
+    }, INTERVAL);
 
-  //    return () => clearInterval(interval);
-  //  }, [current, itemsLength]);
+    return () => clearInterval(interval);
+  }, [current, itemsLength]);
 
   const renderCarItems = () => {
     return items[locale].map((item, index, originalItems) => {
@@ -37,7 +35,6 @@ const Carousel: FC<CarouselProps> = () => {
       );
     });
   };
-
 
   const renderCarDots = () => {
     return items[locale].map((_item, index) => {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const QuoteStripeWrapper = styled.section`
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   overflow: hidden;
   background-color: rgba(51, 51, 51, 1);

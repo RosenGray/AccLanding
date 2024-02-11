@@ -5,7 +5,7 @@ import { LogoWrapper } from './Logo.styled';
 interface LogoProps {}
 
 const Logo: FC<LogoProps> = () => (
- <LogoWrapper>
+ <LogoWrapper href="/">
    <AccessibleIcon/>
  </LogoWrapper>
 );

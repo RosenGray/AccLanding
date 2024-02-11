@@ -25,6 +25,9 @@ body {
 
 html {
   font-size: 62.5%!important; /*1rem   = 10px , 10px/16px = 62.5;*/
+  @media (max-width: 920px){
+    font-size: 10%;
+  }
 }
 
 a {

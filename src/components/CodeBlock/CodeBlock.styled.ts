@@ -1,3 +1,4 @@
+import { media } from "@/styles/responsive";
 import styled from "styled-components";
 
 export const CodeBlockWrapper = styled.div.attrs({role:'button'})`
@@ -11,17 +12,24 @@ export const CodeBlockWrapper = styled.div.attrs({role:'button'})`
   color:white;
   direction: ltr;
   cursor: pointer;
+  overflow: auto;
+
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 `;
 
-export const CopyContainer = styled.div`
+export const CopyContainerDesktop = styled.div`
   display: flex;
   align-items: center;
   position: absolute;
   inset-inline-end: 10px;
   top: 10px;
+     @media ${media.tablet} {
+  
+    top:0;
+    }
 `;
 
 export const CopyButton = styled.button`
@@ -31,6 +39,7 @@ export const CopyButton = styled.button`
   background-color: transparent;
   cursor: pointer;
   line-height: 0;
+
   padding: 10px;
   &:hover {
     background-color: rgb(48, 54, 61);
@@ -40,6 +49,13 @@ export const CopyButton = styled.button`
     font-weight: bold;
     fill:white;
   }
+
+  @media ${media.tablet} {
+    padding:0;
+    svg{
+      fill: red;
+    }
+    }
 `;
 
 export const CheckMark = styled.i`
@@ -61,3 +77,5 @@ export const Tooltip = styled.span<{ $isCopied: boolean }>`
   min-width: 100px;
   text-align: center;
 `;
+//  position: absolute;
+// right: 0;
