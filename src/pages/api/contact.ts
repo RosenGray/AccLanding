@@ -13,8 +13,8 @@ export default async function handler(
     // Example with Gmail; for other services, you'll need to configure accordingly
     service: "Gmail",
     auth: {
-      user: "accessibilik@gmail.com", // process.env.EMAIL_USERNAME,
-      pass: "hmxh bxdq zfkp uyho", //process.env.EMAIL_PASSWORD,
+      user: process.env.NEXT_PUBLIC_EMAIL_USERNAME,
+      pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD
     },
   });
 
@@ -22,7 +22,7 @@ export default async function handler(
     // Send email
     await transporter.sendMail({
       from: email, // Sender address
-      to: "accessibilik@gmail.com", //process.env.MY_EMAIL_ADDRESS, // Your email address where you want to receive emails
+      to:process.env.NEXT_PUBLIC_EMAIL_USERNAME,
       subject: `New message from  ${name},email:${email}`,
       text: message,
       // Optionally, HTML body

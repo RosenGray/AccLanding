@@ -8,7 +8,6 @@ import { AccessibilikState } from "@/utils";
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const { locale } = useRouter();
   useEffect(() => {
-    console.log(locale);
     const dir = locale === "he" ? "rtl" : "ltr";
     document.documentElement.dir = dir;
     document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;

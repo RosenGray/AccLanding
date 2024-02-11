@@ -9,7 +9,6 @@ import ContactUsForm from "@/components/ContactUsForm/ContactUsForm";
 
 const FeaturesPage = () => {
   const { t } = useTranslation("home");
-
   return (
     <PageWrapper>
       <Head>
