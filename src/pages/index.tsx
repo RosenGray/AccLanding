@@ -62,7 +62,7 @@ export default function HomePage() {
 }
 
 // This gets called on every request
-export const getServerSideProps: GetServerSideProps<HomePageProps> = async (
+export const getStaticProps: GetServerSideProps<HomePageProps> = async (
   context
 ) => {
 
