@@ -34,7 +34,7 @@ const Header: FC<HeaderProps> = () => {
       <NavButton ref={refNavButton} htmlFor="navi-toggle">
         <span>&nbsp;</span>
       </NavButton>
-      <NavOverlay />
+      {/* <NavOverlay /> */}
       <NavWrapper>
         <NavItems>
           <NavItem>

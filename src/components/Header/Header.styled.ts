@@ -23,9 +23,11 @@ export const NavWrapper = styled.nav`
   z-index: 1500;
   opacity: 0;
   width: 0;
+  height: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  height: 100vh; 
-  height: 100lvw;
+  background-color: #08334b;
+
+
 `;
 
 export const NavButton = styled.label`
@@ -126,6 +128,8 @@ export const HeaderWrapper = styled.header`
     &:checked ~ ${NavWrapper} {
       opacity: 1;
       width: 100vw;
+      height: 100vh; 
+      height: 100dvh;
     }
     &:checked ~ span.line {
       display: block;

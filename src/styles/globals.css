@@ -36,5 +36,5 @@ a {
 }
 
 body:has(input#navi-toggle:checked){
-  overflow: hidden;
+    overflow: hidden;
 }
