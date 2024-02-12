@@ -2,16 +2,37 @@ import { db } from "../../../firebase";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  console.log(1)
+type Handler = (req: NextApiRequest, res: NextApiResponse) => Promise<void>;
+
+const allowCors =
+  (fn: Handler) => async (req: NextApiRequest, res: NextApiResponse) => {
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("test-vladi", "hellllllooo");
+    // another common pattern
+    // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
+    res.setHeader(
+      "Access-Control-Allow-Methods",
+      "GET,OPTIONS,PATCH,DELETE,POST,PUT"
+    );
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+    );
+    if (req.method === "OPTIONS") {
+      res.status(200).end();
+      return;
+    }
+    return await fn(req, res);
+  };
+
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  console.log(1);
   if (req.method === "POST" || req.method === "OPTIONS") {
     const { domain, created } = req.body;
     try {
       // Connect to the Firestore collection
-      
+
       const domainsRef = collection(db, "domains");
       // Create a query to check if the domain already exists
       const q = query(domainsRef, where("name", "==", domain));
@@ -40,4 +61,6 @@ export default async function handler(
     res.setHeader("Allow", ["POST"]);
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
-}
+};
+
+export default allowCors(handler);
