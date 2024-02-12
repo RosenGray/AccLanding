@@ -44,7 +44,9 @@ export default function HomePage() {
   return (
     <PageWrapper>
       <Head>
-        <title>{t("title")}</title>{" "}
+        <title>{t("title")}</title>
+        <meta name="description" content={t('meta.description')} />
+        <meta name="keywords" content={t('meta.keywords')} />
       </Head>
       <Layout>
         <HeroSection isAcc={isAcc} showPreview={showPreviewHandler} />

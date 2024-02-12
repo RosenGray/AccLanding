@@ -13,6 +13,8 @@ const FeaturesPage = () => {
     <PageWrapper>
       <Head>
         <title>{t("nav.contact")}</title>
+        <meta name="description" content={t('meta.description')} />
+        <meta name="keywords" content={t('meta.keywords')} />
       </Head>
       <Layout>
         <ContactUsForm/>

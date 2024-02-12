@@ -14,7 +14,9 @@ const FeaturesPage = () => {
   return (
     <PageWrapper>
       <Head>
-        <title>{t("nav.features")}</title>{" "}
+        <title>{t("nav.features")}</title>
+        <meta name="description" content={t('meta.description')} />
+        <meta name="keywords" content={t('meta.keywords')} />
       </Head>
       <Layout>
         <FeaturesWithDescription/>

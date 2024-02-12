@@ -100,6 +100,9 @@
     "btn":"Send Me A Message",
     "thankyou":"Thank You",
     "goback":"Go Back"
+  },
+  "meta": {
+    "description": "Unlock the full potential of website accessibility with our free, easy-to-install widget compatible with any application. Enhance user experience with 25 innovative features, including text adjustments, contrast modes, and a dyslexia-friendly font, all available in 37 languages. No sign-ups required—improve your site's accessibility in seconds!",
+    "keywords":"accessibility, web-accessibility, a11y, React, widget, accessibilik, Multilingual Support, Adjust Font Size, Align Text, Dyslexia Font, Font Weight, Highlight Links, Highlight Titles, Letter Spacing, Line Height, Word Spacing, BlueLight Filter, Brightness Control, DarkContrast Button, HighContrast Button, HighSaturation Button, LightContrast Button, LowSaturation Button, Monochrome Button, TextColor Picker, Visual Impairment, Zoom Button, Big Cursor, Reading Guide, Text To Speech, React Accessibility, Accessibility for React, Accessibility React component, Accessibility component, Accessibility widget, React accessibility, accessibility for React, accessibility React component, accessibility component, accessibility widget, User-friendly web accessibility, Inclusive web design, React JS accessibility, Accessible user interface, Web inclusivity tools, User experience enhancement, Web accessibility standards, Universal web access solutions"
   }
-  
 }
