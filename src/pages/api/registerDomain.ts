@@ -1,11 +1,25 @@
+import Cors from "cors";
+import { initMiddleware } from "@/utils";
 import { db } from "../../../firebase";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import type { NextApiRequest, NextApiResponse } from "next";
+
+// Initialize the cors middleware
+const cors = initMiddleware(
+  Cors({
+    // Only allow requests with GET, POST and OPTIONS
+    methods: ["POST"],
+    // Allow requests from any origin
+    origin: "*", // Adjust this to be more restrictive if necessary
+  })
+);
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  // Run the middleware
+  await cors(req, res);
   if (req.method === "POST") {
     const { domain, created } = req.body;
     try {

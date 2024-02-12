@@ -1,3 +1,4 @@
+import { NextApiRequest, NextApiResponse } from "next";
 export const scrollToInstallationSectoion = () => {
   document
     .getElementById("installation")!
@@ -34,4 +35,22 @@ export interface AccessibilikState {
   isBigCursor: boolean;
   showReadingGuide: boolean;
   activateTextToSpeech: boolean;
+}
+
+type NextConnectMiddleware = (
+  req: NextApiRequest,
+  res: NextApiResponse,
+  next: (result?: unknown) => void
+) => void;
+
+export function initMiddleware(middleware: NextConnectMiddleware) {
+  return (req: NextApiRequest, res: NextApiResponse): Promise<void> =>
+    new Promise((resolve, reject) => {
+      middleware(req, res, (result?: unknown) => {
+        if (result instanceof Error) {
+          return reject(result);
+        }
+        return resolve();
+      });
+    });
 }
