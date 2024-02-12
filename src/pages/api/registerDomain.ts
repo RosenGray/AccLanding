@@ -8,7 +8,6 @@ const allowCors =
   (fn: Handler) => async (req: NextApiRequest, res: NextApiResponse) => {
     res.setHeader("Access-Control-Allow-Credentials", "true");
     res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("test-vladi", "hellllllooo");
     // another common pattern
     // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
     res.setHeader(

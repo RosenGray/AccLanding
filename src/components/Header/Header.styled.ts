@@ -16,18 +16,15 @@ export const NavOverlay = styled.div`
 `;
 
 export const NavWrapper = styled.nav`
-  /* height: 100vh; */
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1500;
   opacity: 0;
   width: 0;
   height: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-color: #08334b;
-
-
 `;
 
 export const NavButton = styled.label`
@@ -39,13 +36,7 @@ export const NavButton = styled.label`
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
-  /* @media ${media.mobile} {
-    height: 5rem;
-  width: 5em;
-  }
-   */
   cursor: pointer;
-  /* margin-left: auto; */
   span {
     position: relative;
     margin-top: 3.5rem;
@@ -101,7 +92,7 @@ export const HeaderWrapper = styled.header`
   }
   ${LogoWrapper} {
     background-color: #08334b;
-    z-index: 1001;
+    z-index: 2005
   }
   ${LanguageSwitcherWrapper} {
     position: relative;
@@ -128,7 +119,7 @@ export const HeaderWrapper = styled.header`
     &:checked ~ ${NavWrapper} {
       opacity: 1;
       width: 100vw;
-      height: 100vh; 
+      height: 100vh;
       height: 100dvh;
     }
     &:checked ~ span.line {
@@ -157,9 +148,6 @@ export const NavItems = styled.ul`
   list-style: none;
   text-align: center;
   width: 100%;
-  width: min-content;
-
-  /* width: 200px; */
 `;
 export const NavItem = styled.li`
   margin: 1rem;

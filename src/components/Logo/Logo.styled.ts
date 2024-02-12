@@ -11,6 +11,8 @@ export const LogoWrapper = styled(NextLink)`
   align-items: center;
   justify-content: center;
   border:1px solid white;
+ 
+  z-index: 2000;
 
 
   bottom: 20px;

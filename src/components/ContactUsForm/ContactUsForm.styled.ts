@@ -12,8 +12,8 @@ const commonInput = css`
 
 export const ContactUsFormWrapper = styled.section`
   flex: 1;
-
   display: flex;
+  padding: 50px 0;
   ${ContainerWrapper} {
     flex: 1;
   }
@@ -37,9 +37,9 @@ export const Content = styled.div`
 export const Title = styled.h2`
   font-size: 50px;
   text-align: center;
-
-  padding: 20px;
-  margin-bottom: 50px;
+/* 
+  padding: 20px; */
+  /* margin-bottom: 50px; */
 `;
 
 export const FormGroup = styled.div`
