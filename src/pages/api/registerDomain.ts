@@ -6,10 +6,12 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  console.log(1)
   if (req.method === "POST" || req.method === "OPTIONS") {
     const { domain, created } = req.body;
     try {
       // Connect to the Firestore collection
+      
       const domainsRef = collection(db, "domains");
       // Create a query to check if the domain already exists
       const q = query(domainsRef, where("name", "==", domain));
