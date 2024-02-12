@@ -16,7 +16,7 @@ export const NavOverlay = styled.div`
 `;
 
 export const NavWrapper = styled.nav`
-  height: 100vh;
+  /* height: 100vh; */
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +24,8 @@ export const NavWrapper = styled.nav`
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 `;
 
 export const NavButton = styled.label`
