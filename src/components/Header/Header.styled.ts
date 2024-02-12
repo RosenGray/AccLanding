@@ -25,7 +25,7 @@ export const NavWrapper = styled.nav`
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   height: 100vh; 
-  height: 100dvh;
+  height: 100lvw;
 `;
 
 export const NavButton = styled.label`
