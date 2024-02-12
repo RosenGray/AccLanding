@@ -24,7 +24,7 @@ const Header: FC<HeaderProps> = () => {
   return (
     <HeaderWrapper>
       <Logo />
-      <h3 style={{ color: "white",fontSize:20 }}>Accessibilik</h3>
+      <h3 style={{ color: "white" }}>Accessibilik</h3>
       <LanguageSwitcher />
       <input
         type="checkbox"

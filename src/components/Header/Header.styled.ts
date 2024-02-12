@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { LogoWrapper } from "../Logo/Logo.styled";
 import NextLink from "next/link";
 import { LanguageSwitcherWrapper } from "../LanguageSwitcher/LanguageSwitcher.styled";
+import { media } from "@/styles/responsive";
 
 export const NavOverlay = styled.div`
   height: 6rem;
@@ -12,7 +13,6 @@ export const NavOverlay = styled.div`
   background-image: radial-gradient(#08334b, rgba(51, 51, 51, 1));
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-
 `;
 
 export const NavWrapper = styled.nav`
@@ -35,6 +35,11 @@ export const NavButton = styled.label`
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
+  /* @media ${media.mobile} {
+    height: 5rem;
+  width: 5em;
+  }
+   */
   cursor: pointer;
   /* margin-left: auto; */
   span {
@@ -82,22 +87,24 @@ export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   padding: 1em 2em;
-  
-  /* justify-content: space-between; */
   gap: 20px;
   direction: ltr;
+  h3 {
+    font-size: 20px;
+    @media ${media.mobile} {
+      font-size: 10px;
+    }
+  }
   ${LogoWrapper} {
     background-color: #08334b;
- 
     z-index: 1001;
   }
   ${LanguageSwitcherWrapper} {
     position: relative;
     z-index: 10000000;
     margin-left: auto;
-    
-
   }
+
   input[type="checkbox"] {
     display: none;
     &:checked ~ ${NavOverlay} {
@@ -118,18 +125,18 @@ export const HeaderWrapper = styled.header`
       opacity: 1;
       width: 100vw;
     }
-    &:checked ~  span.line {
+    &:checked ~ span.line {
       display: block;
     }
   }
-  span.line{
+  span.line {
     display: none;
     position: absolute;
     height: 2px;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     background-color: white;
-    bottom:0;
+    bottom: 0;
     z-index: 1001;
   }
 `;
@@ -149,8 +156,7 @@ export const NavItems = styled.ul`
   /* width: 200px; */
 `;
 export const NavItem = styled.li`
-     margin: 1rem;
-
+  margin: 1rem;
 `;
 export const NavLink = styled(NextLink)`
   /* font-size: 18px; */
