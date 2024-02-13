@@ -56,7 +56,7 @@ export default function HomePage() {
         <ImportantSection></ImportantSection>
       </Layout>
       <Script
-        src="https://rosengray.github.io/static/accessibilik.min.js"
+        src="https://acc-landing.vercel.app/accessibilik.min.js"
         onLoad={accLoadHandler}
       />
     </PageWrapper>

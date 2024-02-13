@@ -67,7 +67,7 @@ const ScriptInstall: FC<ScriptInstallProps> = () => {
     <ScriptInstallWrapper>
       <CodeBlock>
         {
-          '<script defer src="https://rosengray.github.io/static/accessibilik.min.js"></script>'
+          '<script defer src="https://acc-landing.vercel.app/accessibilik.min.js"></script>'
         }
       </CodeBlock>
       <Content>{renderContent()}</Content>
